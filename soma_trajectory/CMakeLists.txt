@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   interactive_markers
   visualization_msgs
   soma_msgs
+  soma_manager
   soma_map_manager
   mongodb_store
   std_msgs
@@ -39,7 +40,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES soma_trajectory
-  CATKIN_DEPENDS human_trajectory rospy soma_msgs geometry_msgs soma_map_manager mongodb_store message_runtime interactive_markers visualization_msgs std_msgs nav_msgs
+  CATKIN_DEPENDS human_trajectory rospy soma_msgs geometry_msgs soma_map_manager mongodb_store message_runtime interactive_markers visualization_msgs std_msgs nav_msgs soma_manager
 #  DEPENDS system_lib
 )
 
