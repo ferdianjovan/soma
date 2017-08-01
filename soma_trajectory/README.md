@@ -7,7 +7,7 @@ It includes a simple visual interface to query spatio-temporal constraints.
 Prerequisites
 -------------
 
-- MongoDB (>=2.6)
+- MongoDB (>=3.4)
 - mongodb_store
 - pymongo 
 - shapely
@@ -24,6 +24,13 @@ Getting started (general steps)
 
     ```
     $ roslaunch mongodb_store mongodb_store.launch db_path:=<path_to_db>
+
+    ```
+3. Import people trajectory collection from message_store to somadata database
+   (Assuming that human trajectories were collected via strands_perception_people/human_trajectory package):
+
+    ```
+    $ rosrun soma_trajectory trajectory_importer.py 
 
     ```
 
