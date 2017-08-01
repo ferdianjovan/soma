@@ -7,9 +7,9 @@ It includes a simple visual interface to query spatio-temporal constraints.
 Prerequisites
 -------------
 
-- MongoDB (>=3.4)
+- MongoDB (>=2.6)
 - mongodb_store
-- pymongo 
+- pymongo (>=3.4.0)
 - shapely
 
 
